@@ -1,0 +1,26 @@
+body {
+  background-image: url(https://3.bp.blogspot.com/-oiS8-Yy5tpY/WSNiM9KpATI/AAAAAAAHp9g/epJ9Jjr8ZS0G6LyVwhxg3KLfLxQCuAnOwCLcB/s1600/baby-superheroes-vs-villians-free-printable-poster.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: 50% 15%;
+}
+
+@media (max-width: 600px){
+  body {
+    background-position: 10% 50%;
+  }
+}
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
