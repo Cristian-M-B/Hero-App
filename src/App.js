@@ -5,6 +5,7 @@ import { actionsTypes } from './context/StoreReducer.js';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import Home from './pages/Home.js';
 import Search from './pages/Search.js';
+import Detail from './pages/Detail.js';
 import Login from './pages/Login.js';
 import Error from './pages/Error.js';
 
@@ -18,12 +19,25 @@ export default function App() {
 
   return (
     <Routes>
+
       <Route path='/' element={
         <ProtectedRoute token={token}>
-          <Home token={token} />
+          <Home />
         </ProtectedRoute>
-      }/>
-      <Route path='/search' element={<Search />} />
+      } />
+
+      <Route path='/search' element={
+        <ProtectedRoute token={token}>
+          <Search />
+        </ProtectedRoute>
+      } />
+
+      <Route path='/detail/:id' element={
+        <ProtectedRoute token={token}>
+          <Detail />
+        </ProtectedRoute>
+      } />
+
       <Route path='/login' element={<Login />} />
       <Route path='*' element={<Error />} />
     </Routes>
