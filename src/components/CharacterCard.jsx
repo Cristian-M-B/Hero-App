@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import AddButton from './AddButton.jsx';
 import DeleteButton from './DeleteButton.jsx';
 import IsRepeated from '../utils/IsRepeated.js';
@@ -22,7 +22,9 @@ export default function CharacterCard({ character, addButton, deleteButton, char
                 }
                 {characterDetail &&
                     <Link to={`/detail/${character.id}`}>
-                        Detail
+                        <Button>
+                            Detail
+                        </Button>
                     </Link>
                 }
                 {deleteButton && 
