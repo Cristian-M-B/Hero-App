@@ -11,7 +11,9 @@ export const actionsTypes = {
     LOGOUT: 'LOGOUT',
     SEARCH: 'SEARCH',
     ADD_TEAM: 'ADD TEAM',
-    REMOVE_TEAM: 'REMOVE TEAM'
+    REMOVE_TEAM: 'REMOVE TEAM',
+    GET_DETAIL: 'GET DETAIL',
+    REMOVE_DETAIL: 'REMOVE DETAIL'
 }
 
 export default function StoreReducer(state, action) {
@@ -61,6 +63,18 @@ export default function StoreReducer(state, action) {
             return {
                 ...state,
                 team: deleteTeam
+            }
+
+        case actionsTypes.GET_DETAIL:
+            return {
+                ...state,
+                detail: action.payload
+            }
+
+        case actionsTypes.REMOVE_DETAIL:
+            return {
+                ...state,
+                detail: {}
             }
             
         default:
