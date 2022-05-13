@@ -15,7 +15,7 @@ export default function AddButton({ disabled, character }) {
             disabled={disabled}
             onClick={(e) => addTeam(character)}
         >
-            +
+            Add
         </Button>
     )
 }

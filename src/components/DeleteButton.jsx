@@ -14,8 +14,9 @@ export default function DeleteButton({id}) {
         <Button
             onClick={(e) => removeTeam(id)}
             className='bg-danger'
+            style={{marginLeft: '10px'}}
         >
-            X
+            Delete
         </Button>
     )
 }
